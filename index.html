@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Patil | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: linear-gradient(135deg, #fef9c3 0%, #e0f7ff 35%, #ffffff 100%); color: #0f172a; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(14px); border: 1px solid rgba(252, 211, 77, 0.45); }
+        .hero-gradient { background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.3) 0%, transparent 40%), radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.25) 0%, transparent 45%); }
+        .bright-shadow { box-shadow: 0 12px 28px rgba(251, 191, 36, 0.25); }
+        .tag-blue { background: #dbeafe; color: #0c4a6e; }
+        .tag-yellow { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+        .section-highlight { border-left: 4px solid #f59e0b; padding-left: 1rem; }
+        .yellow-glow { box-shadow: 0 0 25px rgba(245, 158, 11, 0.5), 0 0 45px rgba(251, 191, 36, 0.35); }
+        .image-glow { box-shadow: 0 0 32px 10px rgba(139, 92, 246, 0.4), 0 0 42px 16px rgba(192, 132, 252, 0.25); border-radius: 999px; transition: transform 0.35s ease, box-shadow 0.35s ease; }
+        .image-glow:hover { transform: translateY(-3px); box-shadow: 0 0 48px 13px rgba(251, 191, 36, 0.7), 0 0 60px 25px rgba(192, 132, 252, 0.35); }
+        .name-fancy { font-family: 'Poppins', sans-serif; letter-spacing: 0.04em; font-size: 2.4rem; color: #0f172a; text-shadow: 0 0 8px rgba(249, 115, 22, 0.8), 0 0 18px rgba(250, 204, 21, 0.45); transition: all 0.35s ease; }
+        .name-fancy:hover { color: #0f172a; text-shadow: 0 0 14px rgba(250, 204, 21, 0.95), 0 0 24px rgba(245, 158, 11, 0.8); transform: scale(1.02); }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
+
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight flex items-center gap-2 text-sky-700">
+                <div class="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center text-white font-black">LP</div>
+                <span>Lokesh Patil</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-cyan-600 transition">Home</a>
+                <a href="#stack" class="hover:text-cyan-600 transition">Tech Stack</a>
+                <a href="#projects" class="hover:text-cyan-600 transition">Projects</a>
+                <a href="#contact" class="px-4 py-2 bg-cyan-500 text-white rounded-full hover:bg-cyan-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 hero-gradient">
+        <div class="max-w-5xl mx-auto text-center px-6 py-12 glass rounded-3xl bright-shadow">
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-800 mb-4">Hi, I’m <span class="name-fancy">Lokesh Patil</span></h1>
+            <h2 class="text-2xl md:text-4xl font-semibold text-slate-700 mb-6">Full Stack Developer</h2>
+            <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                I build modern and lightning-fast applications with Java, Spring Boot, Hibernate, HTML, CSS, JavaScript, MongoDB, and MySQL. My work focuses on clear architecture, responsive user experiences, and performant backend APIs.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-cyan-500 text-white rounded-full font-bold hover:bg-cyan-400 transition">Explore Projects</a>
+                <a href="#contact" class="px-8 py-4 bg-white text-slate-800 border border-cyan-300 rounded-full font-bold hover:bg-cyan-100 transition">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">Skill Highlights</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Advanced proficiency in Java stack, front-end frameworks, and databases, backed by system-level best practices.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-8 glass rounded-3xl hover:border-cyan-500 transition bright-shadow">
+                    <i data-lucide="server" class="text-cyan-500 mb-5 w-7 h-7"></i>
+                    <h3 class="text-xl font-bold mb-4">Backend / Java</h3>
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li>• Java, Spring Boot, Microservices</li>
+                        <li>• Hibernate / JPA, REST APIs</li>
+                        <li>• Authentication, JWT, Validation</li>
+                        <li>• Clean coding and SOLID design</li>
+                    </ul>
+                </div>
+                <div class="p-8 glass rounded-3xl hover:border-cyan-500 transition bright-shadow">
+                    <i data-lucide="layout" class="text-cyan-500 mb-5 w-7 h-7"></i>
+                    <h3 class="text-xl font-bold mb-4">Frontend / UI</h3>
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li>• HTML5, CSS3, JavaScript</li>
+                        <li>• Responsive, adaptive interfaces</li>
+                        <li>• Tailwind CSS / Bootstrap</li>
+                        <li>• UX-focused, accessible design</li>
+                    </ul>
+                </div>
+                <div class="p-8 glass rounded-3xl hover:border-cyan-500 transition bright-shadow">
+                    <i data-lucide="database" class="text-cyan-500 mb-5 w-7 h-7"></i>
+                    <h3 class="text-xl font-bold mb-4">Data & DevOps</h3>
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li>• MongoDB, MySQL, query tuning</li>
+                        <li>• Docker Containers</li>
+                        <li>• Git workflows + CI/CD</li>
+                        <li>• Testing with JUnit & automated pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10 text-center section-highlight">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 text-slate-800">Extended Skills & Fluent Stacks</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Additional technologies including cross-platform mobile and multiple programming language tags.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass rounded-3xl p-7 bright-shadow">
+                    <h3 class="text-2xl font-bold mb-4">Web & Backend Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">Java</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">Spring Boot</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">Hibernate</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">HTML</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">CSS</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">JavaScript</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">Node.js</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-blue">REST API</span>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl p-7 bright-shadow">
+                    <h3 class="text-2xl font-bold mb-4">Databases & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">MongoDB</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">MySQL</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">Docker</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">Git</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">CI/CD</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">Swagger</span>
+                        <span class="text-xs px-3 py-1 rounded-full tag-yellow">Postman</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 grid md:grid-cols-1 gap-6">
+                <div class="glass rounded-3xl p-7 bright-shadow">
+                    <h3 class="text-2xl font-bold mb-4">Education</h3>
+                    <p class="text-slate-700 font-semibold">B.Tech in Computer Engineering</p>
+                    <p class="text-slate-600">Godavari Foundation College of Engineering</p>
+                    <p class="text-slate-600">Dr. Babasaheb Technological University, Lonere</p>
+                    <p class="text-slate-600">2022 - 2026</p>
+                    <p class="text-slate-600">Key focus: Full-stack development, distributed systems, database design, and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Featured Projects</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">A selection of recent work showing full-stack mastery and real-world impact.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="glass rounded-3xl p-8 bright-shadow hover:-translate-y-1 transition">
+                    <h3 class="text-2xl font-bold mb-3">E-Commerce Platform</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">End-to-end marketplace using Spring Boot, MongoDB, secure JWT sessions, and modern responsive frontend layout.</p>
+                    <div class="flex gap-2 flex-wrap mb-4"><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">Spring Boot</span><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">React</span><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">MongoDB</span></div>
+                    <a href="#" class="text-cyan-600 font-semibold inline-flex items-center gap-1 hover:underline">Explore case study <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </article>
+                <article class="glass rounded-3xl p-8 bright-shadow hover:-translate-y-1 transition">
+                    <h3 class="text-2xl font-bold mb-3">Task Management API</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Enterprise-grade REST API with role-based access, Hibernate ORM, MySQL, and Swagger docs for maintainable microservices.</p>
+                    <div class="flex gap-2 flex-wrap mb-4"><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">Java 17</span><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">MySQL</span><span class="text-xs bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">Hibernate</span></div>
+                    <a href="#" class="text-cyan-600 font-semibold inline-flex items-center gap-1 hover:underline">View on GitHub <i data-lucide="github" class="w-4 h-4"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center glass rounded-3xl p-10 bright-shadow">
+            <h2 class="text-4xl font-bold mb-4">Let’s build something bright together</h2>
+            <p class="text-slate-600 mb-8">I’m Lokesh Patil, full stack developer. Contact me for Java Spring Boot apps, modern UIs, and robust backends.</p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-3 text-left">
+                    <p class="font-semibold">Email: <a href="mailto:lokeshpatil5527@gmail.com" class="text-cyan-600 hover:underline">lokeshpatil5527@gmail.com</a></p>
+                    <p class="font-semibold">Location: India</p>
+                    <p class="font-semibold">Skills: Java, Spring Boot, Hibernate, HTML, CSS, JavaScript, MongoDB, MySQL</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="image 2 Lokesh .jpg" alt="Lokesh Patil" class="w-40 h-40 rounded-full object-cover border-4 border-cyan-400 shadow-lg image-glow" />
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="mailto:lokeshpatil5527@gmail.com" class="p-4 bg-cyan-100 text-cyan-700 rounded-xl hover:bg-cyan-200 transition"><i data-lucide="mail"></i></a>
+                <a href="https://www.linkedin.com/public-profile/settings" class="p-4 bg-cyan-100 text-cyan-700 rounded-xl hover:bg-cyan-200 transition"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="p-4 bg-cyan-100 text-cyan-700 rounded-xl hover:bg-cyan-200 transition"><i data-lucide="github"></i></a>
+            </div>
+            <p class="mt-8 text-xs text-slate-500 tracking-widest uppercase">© 2026 Lokesh Patil | Full Stack Developer</p>
+        </div>
+    </footer>
+
+    <script> lucide.createIcons(); </script>
+</body>
+</html>
